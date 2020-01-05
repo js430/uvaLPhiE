@@ -1,0 +1,22 @@
+// Colors
+$base-color: #FEFEFE;
+$secondary-color: #F2F7FC;
+$dark-header: #174A7C;
+$light-header: #DDEAF8;
+$footer-color: #002A48;
+
+// Font 
+// $primary-font: "Trebuchet MS", Helvetica, sans-serif;
+$primary-font: 'Lato', sans-serif;
+$text-padding: 20px;
+$dark-font: #174A7C;
+$darker-font: #1D4873;
+
+
+// Dimensions for divs
+$triangle-height: 12vh;
+$triangle-dimensions: 0 0 $triangle-height 100vw;
+$section-height: 77%;
+
+$info-div-width: 80%;
+$info-spacer-width: 100% - $info-div-width; 

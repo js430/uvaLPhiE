@@ -1,0 +1,487 @@
+// Utilities (Colors, font, etc)
+@import "./assets/css/variables";
+@import "./assets/css/mediaqueries";
+@import "./assets/css/_triangles";
+@import "./assets/css/footer";
+@import "./assets/css/fadeIn";
+@import "./assets/css/hamburger";
+@import "./assets/css/common";
+
+.landing-logo{
+    width: 40vw !important;
+}
+
+.info-container{
+    padding-top: 10vh;
+    margin-left: 10%;
+}
+
+    .info{
+        float: left;
+        width: $info-div-width;
+    }
+
+        p{
+            margin-bottom: 0;
+            font-size: $mobile-p-font;
+        }
+
+        h1{
+            word-spacing: -3px;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 1px;
+            font-size: $mobile-header-font;
+            font-weight: lighter;
+        }
+
+    .info-spacer{
+        float: right;
+        width: $info-spacer-width;
+    }
+
+    .header-box{
+        background-color: $dark-header;
+        height: 3.8em;
+        position: relative;
+        margin-right: -1px;
+    }
+
+    .header-dark, .header-light{
+        top: -25% !important;
+    }
+
+// Image Edits
+// **Pictures need to be absolute to obtain the shadow effect, therefor we need a 
+// specific height for the divs
+img{
+    position: absolute;
+    width: auto;
+    bottom: 0;
+    right: 0;
+    max-width: 100vw;
+
+}
+    .section-pic{
+        height: 53%;
+        z-index: 3;
+        padding-right: 10px;
+    }
+
+    .shadow{
+        margin-top: 20px;
+        z-index: 2;
+        height: 60%;
+        filter: brightness(75%);
+        opacity: 0.05;
+    }
+
+#light-trapezoid{
+    width: 100%;
+    height: $section-height;
+    position: relative;
+
+    p{
+        text-align: left;
+        padding-left: $text-padding;
+        color: $darker-font;
+    }
+
+    h1{
+        left: $text-padding;
+        color: $base-color;
+        top: -25%;
+    }
+} 
+
+    .whoweare #header-rounded, .brotherhood #header-rounded{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+
+// dark/light trapezoid is specific for this page bc of images. Do not put in commmon.scss
+#dark-trapezoid{
+    position: relative;
+    height: $section-height+8%;
+    width: 100%;
+    background-color: $secondary-color;
+
+    p{
+        text-align: right;
+        padding-right: $text-padding;
+        color: $darker-font;
+    }
+
+    h1{
+        right: $text-padding;
+        color: $darker-font;
+    }
+}
+
+    #dark-trapezoid .info-container{
+        margin-left: 0; 
+        margin-right: 10%;
+    }
+
+        #dark-trapezoid .header-box{
+            background-color: $light-header;
+            
+        }
+
+        #dark-trapezoid img{
+            left: 10px;
+        }
+
+        #dark-trapezoid .shadow{
+            left: 0;
+        }
+
+
+    .whatwedo #header-rounded{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+//  Carousel Styling
+$carousel-height: 270px;
+.lb-number{
+    display: none !important; 
+}
+
+.lb-details{
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+.carousel-container{
+    height: $carousel-height;
+    background-color: $secondary-color;
+    position: relative;
+}
+    .slick-track{
+        height: $carousel-height;
+        background-color: $footer-color;
+    }
+    .slick-list.draggable{
+        height: $carousel-height;
+        background-color: $footer-color;
+    }
+
+    .slick-slide.slick-active{
+        width: 40vw !important;
+    }
+
+    .slick-prev.slick-arrow{
+        background: $base-color !important;
+        margin-top: $carousel-height/8;
+        left: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        z-index: 5;
+    }
+        .slick-prev.slick-arrow::before{
+            color: $dark-font !important;
+        }
+
+    .slick-next.slick-arrow{
+        margin-top: -$carousel-height/8;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: $base-color !important;
+        z-index: 5;
+
+    }
+        .slick-next.slick-arrow::before{
+            color: $dark-header !important;
+        }
+
+    .carousel-container a{
+        width: 98% !important;
+        height: $carousel-height;
+        object-fit: cover;
+        overflow: hidden; // Cuts off the parts of the image poking out
+        background-position: 50% 30% !important;
+    }
+        .lb-outerContainer.animating{
+            width: 85vw;
+        }
+
+
+@media only screen and (min-width: $phone-big){
+    #light-trapezoid .info-container, #light-trapezoid .info-container{
+        margin-left: 11%;
+    }
+
+    #dark-trapezoid .info-container{
+        margin-right: 11%;
+    }
+        .section-pic{
+            height: 57%;
+        }
+
+        .shadow{
+            height: 66%;
+        }
+
+        #light-trapezoid p{
+            padding-left: 20px;
+            color: $dark-font;
+            padding-right: 100px;
+            font-size: $phone-big-p-font;
+        }
+
+        #dark-trapezoid p{
+            font-size: $phone-big-p-font;
+            padding-left: 100px;
+        }
+}
+
+
+
+@media only screen and (min-width: $tablet-mini){
+    .section-pic{
+        height: 57%;
+    }
+
+    .shadow{
+        height: 63%;
+    }
+
+    .header-box, .info-spacer {
+        height: 5.8em;
+    }
+
+    h1{
+        font-size: $tablet-mini-header-font !important;
+    }
+
+    p{
+        font-size: $tablet-mini-p-font !important;
+    }
+
+    .carousel-container{
+        height: 345px;
+    }
+
+    .carousel-container a{
+        height: 345px;
+    }
+
+    .slick-list.draggable{
+        height: 355px;
+    }
+}
+
+@media only screen and (min-width: $tablet-big){
+    .section-pic{
+        height: 61%;
+    }
+
+    .shadow{
+        height: 71%;
+    }
+
+    .header-box, .info-spacer {
+        height: 6.8em;
+    }
+
+    h1{
+        font-size: $tablet-big-header-font !important;
+    }
+
+    p{
+        font-size: $tablet-big-p-font !important;       
+    }
+}
+
+@media only screen and (min-width: $desktop-mini){
+    #light-trapezoid .info-container{
+        margin-left: 10%;
+    }
+
+    #dark-trapezoid .info-container {
+        margin-right: 10%;
+    }
+
+    .shadow{
+        display: none !important;
+    }
+
+    .section-pic {
+        height: 87%;
+    }
+
+    #light-trapezoid p, #light-trapezoid p {
+        padding-right: 40%;
+    }
+
+    #dark-trapezoid p{
+        padding-left: 40%;
+    }
+
+    p{
+        font-size: $desktop-mini-p-font !important;
+    }
+
+    #light-trapezoid.whoweare:before {
+        content: "";
+        opacity: 0.03;
+        position: absolute;
+        width: 100%;
+        margin-left: -100px;
+        height: 100%;
+        top: 0%;
+        left: -35%;
+        z-index: -1;
+        -webkit-transform: scaleX(-1) !important;
+        transform: scaleX(-1) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+    }
+    
+    #light-trapezoid.brotherhood:before {
+        content: "";
+        opacity: 0.03;
+        position: absolute;
+        width: 100%;
+        margin-left: -100px;
+        height: 100%;
+        top: 0%;
+        left: -35%;
+        z-index: -1;
+        -webkit-transform: scaleX(-1) !important;
+        transform: scaleX(-1) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+    }
+
+    #dark-trapezoid.whatwedo:before {
+        content: "";
+        opacity: 0.03;
+        position: absolute;
+        width: 100%;
+        margin-right: 0;
+        height: 100%;
+        top: 0%;
+        right: 0%;
+        z-index: 0;
+        -webkit-transform: scaleX(-1) !important;
+        transform: scaleX(-1) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        
+    }
+}
+
+@media only screen and (min-width: $desktop-medium){
+    .info p{
+        font-size: 1.3em !important;
+    }
+
+    #light-trapezoid .info-container {
+        margin-left: 15%;
+    }
+        #light-trapezoid .section-pic{
+            margin-right: 3vw;
+        }
+
+        #light-trapezoid p, #light-trapezoid p {
+            font-size: 1.5em;
+            padding-right: 55%;
+        }
+
+    #dark-trapezoid .info-container {
+        margin-right: 15%;
+    }
+        #dark-trapezoid .section-pic{
+            margin-left: 3vw;
+        }
+
+        #dark-trapezoid p {
+            font-size: 1.5em;
+            padding-left: 55%;
+        }
+}
+
+@media only screen and (min-width: $desktop-big){
+    .landing{
+        height: $desktop-landing-height;
+        background-position: 50% 30% !important;
+    }
+
+    #light-trapezoid{
+        margin-top: 1%;
+
+        .info-container{
+            margin-left: 18%;
+        }
+    }
+
+    #dark-trapezoid .info-container {
+        margin-right: 18%;
+    }
+
+    .shadow{
+        display: none !important;
+    }
+
+    .section-pic {
+        height: 87%;
+    }
+
+    #light-trapezoid p{
+        font-size: 1.5em;
+        padding-right: 48%;
+    }
+
+    #dark-trapezoid p{
+        font-size: 1.5em;
+        padding-left: 48%;
+    }
+
+        #dark-trapezoid:before{
+            right: 12%;
+        }
+
+
+    #light-trapezoid:before, #light-trapezoid:before{
+        left: -46%;
+    }
+
+    #light-trapezoid p{
+        padding-right: 52%;
+    }
+
+        #light-trapezoid:before{
+            left: -42%;
+        }
+
+
+    #fade-left {
+        margin-right: 12vw !important;
+    }
+
+    #fade-right {
+        margin-left: 12vw !important;
+    }
+    
+    .carousel-container{
+        height: 450px;
+    }
+
+    .carousel-container a{
+        height: 450px;
+    }
+
+    .slick-list.draggable{
+        height: 450px;
+    }
+}
+
+

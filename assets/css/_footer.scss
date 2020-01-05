@@ -1,0 +1,160 @@
+// Utilities (Colors, font, etc)
+@import "variables";
+@import "mediaqueries";
+@import "common";
+
+$footer-height: 17%;
+
+// Footer
+$footer-color: #002A48;
+$social-media-dimension: 45px;
+
+
+.footer{
+    height: $footer-height;
+    width: 100%;
+    background-color: $footer-color;
+    position: relative;
+}
+
+    .footer-container{
+        // position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .footer p:not(.notice){
+        color: $base-color;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        right: 0;
+        position: absolute;
+        bottom: $footer-height + 15%;
+        text-align: right;
+    }
+
+    .footer-bottom{
+        position: absolute;
+        right: 15px;   
+        bottom: 10px;
+    }
+
+    .notice{
+        color: $base-color;
+        font-size: 0.7em;
+        padding-left: 7px;
+        padding-right: 10px;
+        padding: 5px;
+        display: inline-block;
+
+
+    }
+
+    .social-media-container{
+        display: inline-block;
+    }
+
+    .social-media{
+        display: inline-block;
+        height: 10vw;
+        width: 10vw;
+
+    }
+    
+    #facebook-logo{
+        height: $social-media-dimension;
+        width: $social-media-dimension;
+        background-image: url("../pictures/logos/facebook.png") ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: inline-block;
+        padding-left: 5
+    }
+
+    #instagram-logo{
+        height: $social-media-dimension;
+        width: $social-media-dimension;
+        background-image: url("../pictures/logos/instagram.png") ;
+        background-repeat: no-repeat;
+
+        background-size: contain;
+        background-position: center;
+        display: inline-block;
+    }
+    .social-alert p{
+        font-size: 1rem !important;
+    }
+
+    .notice p{
+        font-size: 0.7rem !important;
+    }
+
+
+@media only screen and (min-width: $tablet-mini){
+    $social-media-dimension: 60px;
+
+    .footer{
+        height: 27%
+    }
+
+    .footer p{
+        font-size: 1.5rem !important;
+    }
+
+    #facebook-logo{
+        height: $social-media-dimension;
+        width: $social-media-dimension;
+    }
+
+    #instagram-logo{
+        height: $social-media-dimension;
+        width: $social-media-dimension;
+    }
+
+    .social-alert{
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: $tablet-big){
+    .footer{
+        font-size: 1.8em;
+        height: 28%;
+    }
+
+    .footer p{
+        font-size: 1.6rem;
+    }
+
+    .notice{
+        font-size: 1.4rem;
+    }
+
+
+}
+
+@media only screen and (min-width: $desktop-mini){
+    .footer p{
+        font-size: 1.2rem;
+    }
+
+    .notice{
+        font-size: 0.8rem;
+    }
+
+    .social-media {
+        height: 68px;
+        width: 68px;
+    }
+}
+
+
+@media screen and (min-height: 1000px){
+    .social-alert{
+        bottom: 20% !important;
+    }
+}

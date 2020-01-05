@@ -1,0 +1,769 @@
+.triangle-light {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 12vh 100vw;
+  border-color: transparent transparent #FEFEFE transparent;
+  bottom: -1px;
+  position: absolute;
+  z-index: 8;
+}
+
+.triangle-dark {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 12vh 100vw;
+  border-color: transparent transparent #F2F7FC transparent;
+  position: absolute;
+  bottom: -1px;
+  position: absolute;
+  z-index: 8;
+}
+
+.triangle-footer {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 12vh 100vw;
+  border-color: transparent transparent #F2F7FC transparent;
+  position: absolute;
+  z-index: 2;
+  transform: scale(-1, -1);
+  margin-top: -1px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  background-color: #FEFEFE;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw !important;
+  -webkit-animation: fadein 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1s;
+  /* Internet Explorer */
+  -o-animation: fadein 1s;
+  /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+.landing {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-color: #FEFEFE;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw !important;
+  -webkit-animation: fadein 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1s;
+  /* Internet Explorer */
+  -o-animation: fadein 1s;
+  /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+.landing-logo {
+  width: 28vw;
+  max-width: 300px;
+  height: auto;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  -webkit-animation: fadein 4s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 4s;
+  /* Internet Explorer */
+  -o-animation: fadein 4s;
+  /* Opera < 12.1 */
+  animation: fadein 4s;
+}
+
+.gap-fill {
+  position: relative;
+  height: 12vh;
+  width: 100%;
+  background-color: #F2F7FC;
+}
+.gap-fill .triangle-dark {
+  border-color: transparent transparent #002A48 transparent !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-box {
+    height: 80px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .landing {
+    height: 90% !important;
+  }
+
+  .page-title {
+    margin-top: 10px !important;
+  }
+}
+.footer {
+  height: 17%;
+  width: 100%;
+  background-color: #002A48;
+  position: relative;
+}
+
+.footer-container {
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p:not(.notice) {
+  color: #FEFEFE;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  right: 0;
+  position: absolute;
+  bottom: 32%;
+  text-align: right;
+}
+
+.footer-bottom {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+}
+
+.notice {
+  color: #FEFEFE;
+  font-size: 0.7em;
+  padding-left: 7px;
+  padding-right: 10px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.social-media-container {
+  display: inline-block;
+}
+
+.social-media {
+  display: inline-block;
+  height: 10vw;
+  width: 10vw;
+}
+
+#facebook-logo {
+  height: 45px;
+  width: 45px;
+  background-image: url("../pictures/logos/facebook.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: inline-block;
+  padding-left: 5;
+}
+
+#instagram-logo {
+  height: 45px;
+  width: 45px;
+  background-image: url("../pictures/logos/instagram.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: inline-block;
+}
+
+.social-alert p {
+  font-size: 1rem !important;
+}
+
+.notice p {
+  font-size: 0.7rem !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    height: 27%;
+  }
+
+  .footer p {
+    font-size: 1.5rem !important;
+  }
+
+  #facebook-logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  #instagram-logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .social-alert {
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .footer {
+    font-size: 1.8em;
+    height: 28%;
+  }
+
+  .footer p {
+    font-size: 1.6rem;
+  }
+
+  .notice {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer p {
+    font-size: 1.2rem;
+  }
+
+  .notice {
+    font-size: 0.8rem;
+  }
+
+  .social-media {
+    height: 68px;
+    width: 68px;
+  }
+}
+@media screen and (min-height: 1000px) {
+  .social-alert {
+    bottom: 20% !important;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hamburger-menu {
+  position: fixed;
+  z-index: 9999;
+  color: white;
+  top: 27px;
+  right: 20px;
+  width: 45px;
+  height: 37px;
+  border: none;
+  background: url("assets/pictures/common/menu2.png");
+  border-radius: 10px;
+  background-size: 100% 100%;
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-color: #174A7C;
+}
+
+#close-menu {
+  background: url("assets/pictures/common/close.png");
+  background-size: 100% 100%;
+  opacity: 0.4;
+  background-repeat: no-repeat;
+}
+
+#mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #174A7C;
+  position: fixed;
+  display: none;
+  -webkit-animation: fadein 0.5s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.5s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 0.5s;
+  /* Internet Explorer */
+  -o-animation: fadein 0.5s;
+  /* Opera < 12.1 */
+  animation: fadein 0.5s;
+  z-index: 9999;
+  justify-content: center;
+}
+
+#mobile-menu ul {
+  display: block;
+  margin: auto;
+  list-style-type: none;
+  color: #FEFEFE;
+  font-size: 2.5rem;
+  padding: 0;
+  text-align: center;
+  padding-bottom: 100px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+#mobile-menu a {
+  padding-bottom: 25px;
+  text-decoration: none;
+  color: #FEFEFE;
+}
+
+.menu-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+.menu-container h2 {
+  margin-top: 0;
+  background-color: #FEFEFE;
+  color: #174A7C;
+  padding: padding-top;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 10px;
+}
+
+.desktop-menu {
+  position: absolute;
+  display: none;
+  z-index: 3;
+  color: #FEFEFE;
+  font-size: 2rem;
+  top: 20px;
+  right: 30px;
+}
+.desktop-menu ul {
+  margin-top: 0;
+}
+.desktop-menu h2 {
+  margin-top: 0;
+}
+.desktop-menu .page-title {
+  display: inline-block;
+}
+.desktop-menu .desktop-menu {
+  width: 40vw;
+  background-color: black;
+}
+.desktop-menu .menu-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+.desktop-menu a {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #FEFEFE;
+  background-color: none;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.desktop-menu a:hover {
+  background-color: #1D4873;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.title-box {
+  position: absolute;
+  z-index: 3;
+  width: 58%;
+  height: 50px;
+  background-color: #FEFEFE;
+  right: 0;
+  top: 20px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+.title-box h2 {
+  position: absolute;
+  margin-top: 0;
+  margin-bottom: 0;
+  bottom: 0;
+  font-size: 2.3em;
+  padding-left: 13px;
+  text-transform: capitalize;
+  color: #174A7C;
+}
+
+.menu-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .hamburger-menu {
+    width: 80px;
+    height: 65px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hamburger-menu {
+    display: none !important;
+  }
+
+  .title-box {
+    display: none !important;
+  }
+
+  .desktop-menu {
+    display: block;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  background-color: #FEFEFE;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw !important;
+  -webkit-animation: fadein 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1s;
+  /* Internet Explorer */
+  -o-animation: fadein 1s;
+  /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+.landing {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-color: #FEFEFE;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw !important;
+  -webkit-animation: fadein 1s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 1s;
+  /* Internet Explorer */
+  -o-animation: fadein 1s;
+  /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+.landing-logo {
+  width: 28vw;
+  max-width: 300px;
+  height: auto;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  -webkit-animation: fadein 4s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 4s;
+  /* Internet Explorer */
+  -o-animation: fadein 4s;
+  /* Opera < 12.1 */
+  animation: fadein 4s;
+}
+
+.gap-fill {
+  position: relative;
+  height: 12vh;
+  width: 100%;
+  background-color: #F2F7FC;
+}
+.gap-fill .triangle-dark {
+  border-color: transparent transparent #002A48 transparent !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-box {
+    height: 80px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .landing {
+    height: 90% !important;
+  }
+
+  .page-title {
+    margin-top: 10px !important;
+  }
+}
+.title-box {
+  width: 62vw;
+}
+.title-box h2 {
+  font-size: 1.6em;
+  padding-bottom: 6px;
+}
+
+.phil-intro {
+  width: 100%;
+  position: relative;
+}
+.phil-intro h1 {
+  left: 10%;
+  color: #FEFEFE;
+}
+
+.phil-infos {
+  padding-bottom: 40%;
+  padding-top: 20%;
+  margin: auto;
+  max-width: 80%;
+}
+
+.phil-intro p {
+  text-align: left;
+  color: #174A7C;
+  padding-right: 64px;
+  margin-bottom: 0;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+h4 {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #174A7C;
+}
+
+#phil-page.landing {
+  background: url("./assets/pictures/philosophy/phil-pi.jpg") no-repeat;
+  background-size: cover !important;
+  background-position: 55% center !important;
+}
+
+.organizations {
+  width: 100%;
+  background-color: #F2F7FC;
+}
+.organizations .orgs-container {
+  height: 100%;
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+.organizations p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  color: #174A7C;
+  padding-bottom: 100px;
+}
+.organizations #event-odd {
+  text-align: right;
+}
+.organizations #event-even {
+  text-align: left;
+}
+.organizations img {
+  height: auto;
+  width: 80px;
+}
+.organizations .twitch-logo, .organizations .tomtober-logo {
+  width: 180px;
+}
+
+.social-alert {
+  padding-bottom: 35px !important;
+}
+
+@media only screen and (min-width: 600px) {
+  p {
+    font-size: 1.1em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.3em;
+  }
+
+  #event-odd p {
+    padding-left: 20%;
+  }
+
+  #event-even p {
+    padding-right: 20%;
+  }
+
+  .twitch-logo, .tomtober-logo {
+    width: 360px !important;
+  }
+
+  h2 {
+    font-size: 3.4em !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #phil-page .section-pic {
+    height: 61%;
+  }
+
+  .shadow {
+    height: 71%;
+  }
+
+  .header-box, .info-spacer {
+    height: 6.8em;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  .info p {
+    font-size: 1.8em;
+  }
+
+  h4 {
+    font-size: 4em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .phil-infos {
+    padding-bottom: 18%;
+    padding-top: 9%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #phil-page.landing {
+    background: url("./assets/pictures/philosophy/phil-pi.jpg") !important no-repeat;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 3rem !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .phil-infos {
+    max-width: 66%;
+  }
+
+  .organizations .orgs-container {
+    max-width: 66%;
+  }
+
+  p {
+    font-size: 1.3em !important;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .phil-infos {
+    max-width: 50%;
+    padding-bottom: 14%;
+    padding-top: 7%;
+  }
+
+  .organizations {
+    padding-bottom: 100px;
+  }
+  .organizations #event-odd p {
+    padding-left: 40%;
+  }
+  .organizations #event-even p {
+    padding-right: 40%;
+  }
+  .organizations .orgs-container {
+    max-width: 50%;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .social-alert {
+    padding-bottom: 40px !important;
+  }
+}
+
+/*# sourceMappingURL=philosophy.css.map */

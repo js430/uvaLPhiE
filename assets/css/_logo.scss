@@ -1,0 +1,16 @@
+
+.mission{
+    width: 100%;
+    height: $section-height;
+    position: relative;
+}
+
+    .mission h1{
+        color: $dark-font;
+        padding-left: $text-padding;
+    }
+
+    .mission p{
+        padding-left: $text-padding;
+        color: $dark-font;
+    }

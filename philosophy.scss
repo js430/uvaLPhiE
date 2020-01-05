@@ -1,0 +1,228 @@
+// Utilities (Colors, font, etc)
+@import "./assets/css/variables";
+@import "./assets/css/mediaqueries";
+@import "./assets/css/_triangles";
+@import "./assets/css/footer";
+@import "./assets/css/fadeIn";
+@import "./assets/css/hamburger";
+@import "./assets/css/common";
+
+$text-padding: 10%;
+    
+.title-box{
+    width: 62vw;
+
+    h2{
+        font-size: 1.6em;
+        padding-bottom: 6px;
+    }
+}
+
+
+.phil-intro{
+    width: 100%;
+    position: relative;
+
+    h1{
+        left: $text-padding;
+        color: $base-color;
+    }
+}
+
+.phil-infos{
+    padding-bottom: 40%;
+    padding-top: 20%;
+        margin: auto;
+    max-width: 80%;
+
+}
+.phil-intro p{
+    text-align: left;
+    color: $dark-font;
+    padding-right: 64px;
+    margin-bottom: 0;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+h4{
+    font-size: $mobile-header-font;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $dark-font;
+}
+
+#phil-page.landing{
+    background: url('./assets/pictures/philosophy/phil-pi.jpg') no-repeat;
+    background-size: cover !important;
+    background-position: 55% center !important;
+}
+
+.organizations{
+    width: 100%;
+    background-color: $secondary-color;
+
+    .orgs-container{
+        height: 100%;
+        width: 100%;
+        max-width: 80%;
+        margin: auto;
+        padding-top: 100px;
+    }
+
+    p{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 10px;
+        color: $dark-font;
+        padding-bottom: 100px;
+    }
+
+    #event-odd{
+        text-align: right;
+    }
+
+    #event-even{
+        text-align: left;
+
+    }
+
+    img{
+        height: auto;
+        width: 80px;
+    }
+
+    .twitch-logo, .tomtober-logo{
+        width: 180px;
+    }
+}
+
+.social-alert{
+    padding-bottom: 35px !important;
+}
+
+@media only screen and (min-width: $phone-big){
+        p{
+            font-size: $phone-big-p-font;
+        }
+}
+
+@media only screen and (min-width: $tablet-mini){
+        p{
+            font-size: $tablet-mini-p-font;
+        }
+
+        #event-odd p{
+            padding-left: 20%;
+        }
+
+        #event-even p{
+            padding-right: 20%;
+        }
+
+        .twitch-logo, .tomtober-logo{
+            width: 360px !important;
+        }
+        
+        h2{
+            font-size: 3.4em !important;
+        }
+}
+
+@media only screen and (min-width: $tablet-big){
+    #phil-page .section-pic{
+        height: 61%;
+    }
+
+    .shadow{
+        height: 71%;
+    }
+
+    .header-box, .info-spacer {
+        height: 6.8em;
+    }
+        h1{
+            font-size: 4em;
+        }
+
+        .info p{
+            font-size: 1.8em;       
+        }
+    h4{
+        font-size: $tablet-big-header-font;
+    }
+
+    p{
+        font-size: $tablet-big-p-font;
+    }
+
+    .phil-infos{
+        padding-bottom: 18%;
+        padding-top: 9%;
+    }
+}
+
+@media only screen and (min-width: $desktop-mini){
+    #phil-page.landing{
+        background: url('./assets/pictures/philosophy/phil-pi.jpg') !important no-repeat;
+    }
+
+    p{
+        font-size: $desktop-mini-p-font;
+    }
+
+    h2{
+        font-size: 3rem !important; 
+    }
+}
+
+@media only screen and (min-width: $desktop-medium){
+
+    .phil-infos{
+        max-width: 66%;
+    }
+    
+    .organizations{
+        .orgs-container{
+            max-width: 66%;
+        }
+    }
+
+    p{
+        font-size: 1.3em !important;
+    }
+}
+
+@media only screen and (min-width: $desktop-big){    
+    $text-padding: 40%;
+
+    .phil-infos{
+        max-width: 50%;
+        padding-bottom: 14%;
+        padding-top: 7%;
+    }
+
+    .organizations{
+        padding-bottom: 100px;
+
+        #event-odd p {
+            padding-left: $text-padding;
+        }
+
+        #event-even p {
+            padding-right: $text-padding;
+        }
+
+        .orgs-container{
+            max-width: 50%;
+        }
+    }
+
+    p{
+        font-size: 1.5em;
+    }
+
+    .social-alert{
+        padding-bottom: 40px !important;
+    }
+}

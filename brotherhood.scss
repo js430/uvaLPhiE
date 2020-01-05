@@ -1,0 +1,769 @@
+// Utilities (Colors, font, etc)
+@import "./assets/css/variables";
+@import "./assets/css/mediaqueries";
+@import "./assets/css/_triangles";
+@import "./assets/css/footer";
+@import "./assets/css/fadeIn";
+@import "./assets/css/hamburger";
+@import "./assets/css/common";
+
+
+.info-container{
+    padding-top: 10vh;
+    margin-left: 10%;
+}
+
+    .info{
+        width: $info-div-width;
+        display: inline-block;
+    }
+
+    .info-spacer{
+        float: left;
+        width: $info-spacer-width;
+    }
+
+    .roster .info-spacer, .chairs .info-spacer{
+        float: right;
+    }
+
+    .header-box{
+        background-color: $dark-header;
+        height: 3.8em;
+        position: relative;
+        margin-right: -1px;
+    }
+
+p{
+    margin-bottom: 0;
+}
+
+h1{
+    word-spacing: -3px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1px;
+    font-size: 2em;
+    font-weight: lighter;
+    
+}
+
+.section-pic{
+    height: 53%;
+    z-index: 3;
+    padding-right: 10px;
+}
+
+.shadow{
+    margin-top: 20px;
+    z-index: 2;
+    height: 60%;
+    filter: brightness(75%);
+    opacity: 0.05;
+}
+        
+.title-box{
+    width: 62vw;
+
+    h2{
+        font-size: 1.6em;
+        padding-bottom: 6px;
+    }
+}
+
+
+#dark-trapezoid{
+    width: 100%;
+    position: relative;
+    background-color: $secondary-color;
+    overflow: hidden;
+
+    p{
+        text-align: right;
+        padding-right: $text-padding;
+        color: $darker-font;
+    }
+
+    h1{
+        right: $text-padding;
+        color: $darker-font;
+    }
+}
+
+
+.header-dark, .header-light{
+    top: -25% !important;
+}
+
+    #dark-trapezoid .info-container{
+        margin-left: 0; 
+        margin-right: 10%;
+    }
+
+        #dark-trapezoid .header-box{
+            background-color: $light-header;
+        }
+
+        .exec-board #header-rounded{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        #dark-trapezoid img{
+            left: 10px;
+        }
+
+        #dark-trapezoid .shadow{
+            left: 0;
+        }
+
+
+#light-trapezoid{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    p{
+        text-align: left;
+        padding-left: $text-padding;
+        color: $darker-font;
+    }
+
+    h1{
+        left: $text-padding;
+        color: $base-color;
+    }
+}
+
+    .brothers #header-rounded, .chairs #header-rounded{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+
+//  Carousel Styling
+$image-height: 420px;
+.owl-carousel.owl-theme.owl-loaded.owl-drag{
+    width: 100%;
+    padding-top: 15px;
+}
+
+.item{
+    text-align: center;
+    color: $dark-font;
+
+    img{
+        height: $image-height;
+        width: auto !important;
+    }
+
+    h5{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.4em;
+        color: $dark-font;
+
+    }
+}
+
+.exec-carousel-pic{
+    margin: auto !important;
+}
+
+
+.info-orderer{
+    display: flex;
+    flex-direction: column;}
+
+.owl-stage-outer{
+    height: $image-height;
+    overflow: visible !important;
+}
+
+.owl-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.owl-prev{
+    color: $dark-font;
+    left: 30px;
+    position: absolute;
+    font-size: 3em;
+    font-size: 3em !important;
+
+}
+
+.owl-next{
+    color: $dark-font;
+    right: 30px;
+    position: absolute;
+    font-size: 3em !important;
+}
+
+// End of Carousel styling**
+#triangle-override{
+    border-color: transparent transparent $footer-color transparent;
+}
+
+.brothers ul{
+    height: 400px;
+    width: 100%;
+    text-align: left;
+    padding-left: 15%;
+}
+
+
+// Desktop version of class names
+#class-member-names{
+    display: none;
+}
+
+.brothers .info-spacer{
+    float: right;
+}
+
+.item ul li{
+    padding-left: 0 !important;
+    list-style-type: none !important;
+    padding-top: 3px !important;
+}
+
+//  Desktop  Click and Appear Javascript elements
+li{
+    padding-top: 0;
+    color: $dark-font;
+}
+
+// House roster desktop styling
+.roster-classs{
+    display: none;
+
+    ul{
+        padding-left: 0;
+    }
+
+    li{
+        list-style-type: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.5em;
+    }
+}
+
+#roster-member-pic{
+    display: none;
+    height: 87%;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    right: 12%;
+    background-image: none;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    transition: background-image 0.5s;
+}
+
+#roster-1{
+    background: pink;
+    color: rgb(254, 254, 254);
+    font-size: 2em;
+    border-radius: 10px;
+    padding-right: 20px;
+}
+
+.roster-classs{
+    position: absolute;
+    left: 11%;
+    text-align: left;
+
+    li{
+        padding-left: 10px;
+    }
+}
+
+.chairs-list2{
+    padding-left: 30px !important;
+}
+.roster-member-info {
+    position: absolute;
+    left: 8%;
+    text-align: center;
+    top: 18%;
+}
+
+//  Desktop styling for Executives div
+.exec-positions{
+    position: absolute;
+    right: 15%;
+    text-align: right;
+}
+
+.exec-board ul li{
+    list-style-type: none ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.exec-positions{
+    display: none;
+}
+
+#exec-member-pic{
+    display: none;
+    height: 87%;
+    width: 40%;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 12%;
+    background-image: none;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: bottom center !important;
+        transition: background-image 0.5s;
+}
+
+.exec-member-info{
+    position: absolute;
+    right: -18%;
+    top: 23.5%;
+    background-color: $light-header;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    li{
+        // color: #FEFEFE !important;
+    }
+}
+
+
+#exec-pic-line{
+    padding-top: 4px !important;
+}
+
+#president{
+    background: #174A7C;
+    color: #FEFEFE;
+    font-size: 2em;
+    padding-left: 20px;
+    border-radius: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+// Desktop styling for Chair positions
+.chair-positions{
+    display: none;
+}
+
+#chair-member-pic{
+    display: none;
+    height: 87%;
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    right: 12%;
+    background-image: none;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: bottom center !important;
+    transition: background-image 0.5s;
+}
+
+#chair-board-info{
+    ul{
+        padding-left: 20px;
+    }
+
+    #name-box{
+        background-color: $light-header;
+        border-radius: 10px;
+        z-index: 9999;
+        padding-right: 20px;
+    }
+
+    li{
+        list-style-type: none ;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+}
+
+#alumni{
+    background: #174A7C;
+    color: #FEFEFE;
+    font-size: 2em;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.chair-positions{
+    position: absolute;
+    left: 15%;
+    text-align: left;
+}
+.chair-member-info {
+    position: absolute;
+    left: -13%;
+    text-align: center;
+    top: 24%;
+}
+
+    #chair-pic-line{
+        padding-top: 0 !important;
+    }
+
+
+
+@media only screen and (min-width: $phone-big){
+    #light-trapezoid .info-container, #light-trapezoid .info-container{
+        margin-left: 11%;
+    }
+
+    #dark-trapezoid .info-container{
+        margin-right: 11%;
+    }
+        .section-pic{
+            height: 57%;
+        }
+
+        .shadow{
+            height: 66%;
+        }
+
+        #light-trapezoid p, #light-trapezoid p{
+            padding-left: 20px;
+            color: $dark-font;
+            padding-right: 100px;
+            font-size: 1.1em;
+        }
+
+        #dark-trapezoid p{
+            font-size: 1.1em;
+            padding-left: 100px;
+        }
+
+    .item img{
+        height: 550px;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: $tablet-mini){
+    h5{
+        font-size: 2.4em !important;
+    }
+
+    li{
+        font-size: 1.5em;
+    }
+
+    .section-pic{
+        height: 57%;
+    }
+
+        .shadow{
+            height: 63%;
+        }
+
+    .header-box, .info-spacer {
+        height: 5.8em;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    .info p{
+        font-size: 1.3em;
+    }
+
+    .item{
+        height: 550px;
+    }
+
+    .title-box h2{
+        font-size: 3.3em;
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: $tablet-big){
+    .section-pic{
+        height: 61%;
+    }
+
+    .shadow{
+        height: 71%;
+    }
+
+    .header-box, .info-spacer {
+        height: 6.8em;
+    }
+        h1{
+            font-size: 4em;
+        }
+
+        .info p{
+            font-size: 1.8em;       
+        }
+    
+    // Get rid of carousels
+    .owl-carousel.owl-theme.owl-loaded.owl-drag{
+            display: none;
+    }
+
+    .brothers, .exec-board, .chairs{
+        height: $section-height;
+    }
+
+    .exec-positions, #chair-member-pic, #exec-member-pic,{
+        display: block;
+    }
+    
+
+    .chair-positions{
+        display: flex !important;
+        left: 10.5%;
+
+        li{
+            font-size: 1.5em;
+        }
+    }
+
+        .chair-member-info {
+            left: -20%;
+        }
+
+        #chair-member-pic{
+            right: 5%;
+        }
+
+    .roster-classs{
+        display: flex;
+    }
+
+    .exec-positions{
+        right: 11%;
+    }
+
+
+    #class-member-names{
+        display: block;
+        position: absolute;
+        right: 13%;
+        top: 28%;
+        h6{
+            font-size: 2.5em;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-align: center;
+            text-transform: capitalize;
+            color: $dark-font;
+        }
+
+        li{
+            list-style-type: none;
+            text-align: center;
+            font-size: 1.3em;        
+            color: $dark-font;
+            padding-top: 10px;
+        }
+    }
+}
+
+
+@media only screen and (min-width: $desktop-mini){
+    #light-trapezoid .info-container, #light-trapezoid .info-container {
+        margin-left: 10%;
+    }
+
+    #dark-trapezoid .info-container {
+        margin-right: 10%;
+    }
+    .section-pic {
+        height: 87%;
+    }
+
+        .shadow{
+            display: none !important;
+        }
+
+    #light-trapezoid p {
+        font-size: 1.5em;
+        padding-right: 40%;
+    }
+
+    #dark-trapezoid p{
+        font-size: 1.5em;
+        padding-left: 40%;
+    }
+
+    .exec-positions{
+        right: 10%;
+    }
+
+    .roster-classs{
+        left: 10%;
+    }
+    .chair-positions {
+        left: 15.5%;
+    }
+}
+
+
+@media only screen and (min-width: $desktop-medium){
+    .info p{
+        font-size: 1.3em !important;
+    }
+
+    #light-trapezoid .info-container {
+        margin-left: 15%;
+    }
+        #light-trapezoid .section-pic{
+            margin-right: 3vw;
+        }
+
+        #light-trapezoid p, #light-trapezoid p {
+            font-size: 1.5em;
+            padding-right: 55%;
+        }
+
+    #dark-trapezoid .info-container {
+        margin-right: 15%;
+    }
+        #dark-trapezoid .section-pic{
+            margin-left: 3vw;
+        }
+
+        #dark-trapezoid p {
+            font-size: 1.5em;
+            padding-left: 55%;
+        }
+
+    .exec-positions{
+        right: 15%;
+    }
+
+    .brothers{
+        height: 100%;
+    }
+
+    .exec-board {
+        height: 90%;
+    }
+
+    .chairs{ 
+        height: 100%;
+    }
+
+    .roster-classs{
+        left: 15%;
+    }
+}
+
+@media only screen and (min-width: $desktop-big){
+    .landing{
+        height: 85%;
+    }
+
+    #light-trapezoid{
+        margin-top: 1%;
+
+        .info-container{
+            margin-left: 18%;
+        }
+    }
+
+        #light-trapezoid:before{
+            left: -42%;
+        }
+
+    #dark-trapezoid .info-container {
+        margin-right: 18%;
+    }
+        #dark-trapezoid:before{
+            right: 12%;
+        }
+
+        
+
+    .shadow{
+        display: none !important;
+    }
+
+    .section-pic {
+        height: 87%;
+    }
+
+    #light-trapezoid p{
+        font-size: 1.5em;
+        padding-right: 52%;
+
+    }
+
+    #dark-trapezoid p{
+        font-size: 1.5em;
+        padding-left: 48%;
+    }
+
+
+    #fade-left {
+        margin-right: 16vw !important;
+    }
+
+    #fade-right {
+        margin-left: 16vw !important;
+    }
+
+    .exec-positions{
+        right: 18%;
+    }
+    
+    .roster-classs{
+        left: 18.5%;
+    }
+    .chair-positions {
+        left: 18.4%;
+    }
+
+    #class-member-names{
+        right: 37%;
+    }
+
+    .brothers {
+        height: 87%;
+    }
+}
+
+
+// Special Case Media Queries
+// Dimensions are 1000x600 to 1400x800p
+@media (min-width: 1100px) and (max-width: 1400px) and (min-height: 600px) and (max-height: 1000px){
+    .brothers {
+        height: 95% !important;
+    }
+
+    .chairs {
+        height: 95% !important;
+    }
+        #class-member-names {
+            right: 23% !important;
+        }
+}
