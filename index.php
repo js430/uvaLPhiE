@@ -45,7 +45,7 @@
           </div>
         </div>
 
-        <div class="landing" style="background: url('./assets/pictures/landing/landing_head.png')">
+        <div class="landing" style="background: url('./assets/pictures/landing/landing_mobile.png')">
          <a href="./index.php"><img class="landing-logo" src="./assets/pictures/landing/logo.png"></a>
           <div class="triangle-light" style="transform: scaleX(-1)"></div>
         </div>

@@ -250,6 +250,9 @@ $carousel-height: 270px;
 
 
 @media only screen and (min-width: $tablet-mini){
+    .landing{
+        background: url('./assets/pictures/landing/landing_head.png') !important;
+    }
     .section-pic{
         height: 57%;
     }

@@ -470,6 +470,9 @@ li{
 }
 
 @media only screen and (min-width: $tablet-mini){
+    .landing{
+        background: url('./assets/pictures/brotherhood/brothers.png') !important;
+    }
     h5{
         font-size: 2.4em !important;
     }

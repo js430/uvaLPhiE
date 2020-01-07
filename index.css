@@ -248,6 +248,10 @@ body {
     height: 68px;
     width: 68px;
   }
+
+  .social-alert, .footer-bottom {
+    margin-right: 15px;
+  }
 }
 @media screen and (min-height: 1000px) {
   .social-alert {
@@ -799,6 +803,10 @@ img {
   }
 }
 @media only screen and (min-width: 768px) {
+  .landing {
+    background: url("./assets/pictures/landing/landing_head.png") !important;
+  }
+
   .section-pic {
     height: 57%;
   }

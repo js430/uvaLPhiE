@@ -35,7 +35,7 @@
           </div>
         </div>
 
-        <div class="landing" style="background: url('./assets/pictures/brotherhood/brothers.png') no-repeat">
+        <div class="landing" style="background: url('./assets/pictures/brotherhood/brothers-mobile.png') no-repeat">
           <a href="./index.php"><img class="landing-logo" src="./assets/pictures/landing/logo.png"></a>
           <div class="triangle-light" style="transform: scaleX(-1)"></div>
           <div class="title-box"><h2>Brotherhood</h2></div>
