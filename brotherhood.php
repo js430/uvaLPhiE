@@ -57,7 +57,7 @@
                   <li class="class-name" id="zeta" onclick="showClassMembers('class-member-names', 'zeta', 'class-name', '35')">Zeta</li>
                   <li class="class-name" id="eta" onclick="showClassMembers('class-member-names', 'eta', 'class-name', '37')">Eta</li>
                   <li class="class-name" id="theta" onclick="showClassMembers('class-member-names', 'theta', 'class-name', '44')">Theta</li>
-                  <li class="class-name" id="iota" onclick="showClassMembers('class-member-names', 'iota', 'class-name', '53')">Iota</li>
+                  <li class="class-name" id="iota" onclick="showClassMembers('class-member-names', 'iota', 'class-name', '52')">Iota</li>
                 </ul>
                 <ul class="chairs-list2">
                   <li class="class-name" id="kappa" onclick="showClassMembers('class-member-names', 'kappa', 'class-name', '62')">Kappa</li>
@@ -90,7 +90,7 @@
               listClasses("Zeta", $zeta, 35);
               listClasses("Eta", $eta, 37);
               listClasses("Theta", $theta, 44);
-              listClasses("Iota", $iota, 53);
+              listClasses("Iota", $iota, 52);
               listClasses("Kappa", $kappa, 62);
               listClasses("Mu", $mu, 65);
               listClasses("Nu", $nu, 69);
