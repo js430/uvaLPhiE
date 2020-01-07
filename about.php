@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="icon" href="./assets/pictures/logos/alpha.png">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <title>UVa Lambdas About</title>
+    <title>UVa Lambdas</title>
   </head>
   <body>
       <div class="container">

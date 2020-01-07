@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="brotherhood.css">
+    <link rel="icon" href="./assets/pictures/logos/alpha.png">
     <link rel="stylesheet" href="./assets/owl.carousel.min.css">
   <link rel="stylesheet" href="./assets/owl.theme.default.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <title>UVa Lambdas Brotherhood</title>
+    <title>UVa Lambdas</title>
   </head>
   <body>
       <?php include 'functions.php';?>
@@ -189,7 +190,7 @@
           <div class="owl-carousel owl-theme">
             <?php 
                   createCarouselItem("Webmaster", "Min Jea Kim", "#106 Dark Zero Curvy", "./assets/pictures/brotherhood/ChairPhotos/minjea.png");
-                  createCarouselItem("Alumni Chair", "Andrew Chen", "#96 Red Head Redemptiono", "./assets/pictures/brotherhood/ChairPhotos/andrew.png");
+                  createCarouselItem("Alumni Chair", "Andrew Chen", "#96 Red Head Redemption", "./assets/pictures/brotherhood/ChairPhotos/andrew.png");
                   createCarouselItem("Culture Chair", "Andrew Chen/Eric Guan/", "Gordon Lee", "./assets/pictures/brotherhood/ChairPhotos/culture.png");
                   createCarouselItem("Professional", "Dhaval Patel", "#104 Discount Cub Scout", "./assets/pictures/brotherhood/ChairPhotos/dhaval.png");
                   createCarouselItem("Historian", "Min Jea Kim", "#106 Dark Zero Curvy", "./assets/pictures/brotherhood/ChairPhotos/minjea.png");

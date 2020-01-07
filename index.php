@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="./assets/pictures/logos/alpha.png">
     <link rel="stylesheet" type="text/css" href="./assets/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/lightbox.css"/>
