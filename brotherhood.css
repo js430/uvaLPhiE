@@ -569,6 +569,11 @@ body {
     margin-top: 10px !important;
   }
 }
+body {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
 .info-container {
   padding-top: 10vh;
   margin-left: 10%;

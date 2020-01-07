@@ -78,7 +78,6 @@ function showClassMembers(divToAddNames, ClassName, classNameToReset, startingNu
     var textnode = document.createTextNode(ClassName);         
     classTitle.appendChild(textnode);
     ulElement.appendChild(classTitle);
-    console.log(ClassName);
 
     var startingNumber = parseInt(startingNumber);
 
